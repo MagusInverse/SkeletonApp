@@ -1,29 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
-    <ion-title class="ion-text-center"><ion-icon name="fish-outline"></ion-icon> Skeleton App <ion-icon name="fish-outline"></ion-icon> </ion-title>
+    <ion-title class="ion-text-center titulo-principal">SKELETON<span class="skull"> g </span>APP</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title class="ion-text-center">Login <ion-icon name="log-in-outline"></ion-icon></ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <form [formGroup]="formularioLogin">
-        <ion-item>
-          <ion-label position="floating">Nombre</ion-label>
-          <ion-input formControlName="nombre"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label position="floating">Password</ion-label>
-          <ion-input formControlName="password" type="password"></ion-input>
-        </ion-item>
-      </form>
-      <ion-button fill="outline">
-        Ingresar
-      </ion-button>
-    </ion-card-content>
-  </ion-card>
+  <br>
+<ion-card>
+  <ion-card-title class="ion-text-center">Login Usuario</ion-card-title>
+  <br>
+  <ion-item>
+    <ion-input [(ngModel)]="correo" label="Correo" labelPlacement="floating" placeholder="correo@gmail.com"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="password" label="Password" labelPlacement="floating" placeholder="Máximo 12 caracteres" type="password"></ion-input>
+  </ion-item>
+  <br>
+  <ion-button expand="block" (click)="PasarDatos()">Ingresar</ion-button>
+</ion-card>
 </ion-content>

@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center titulo-principal">SKELETON<span class="skull"> g </span>APP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <br>
+  <ion-item>
+    <ion-input Label="Nombre" labelPlacement="floating" placeholder="Ingrese su nombre"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input Label="Ciudad" labelPlacement="floating" placeholder="Ciudad donde vive"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input Label="Correo" labelPlacement="floating" placeholder="Ej: correo@gmail.com"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input Label="Código Usuario" labelPlacement="floating" placeholder="Código Usuario? 4 dígitos"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input Label="Teléfono" labelPlacement="floating" placeholder="+569 XXXXXXXX"></ion-input>
+  </ion-item>
+  <br>
+  <ion-button expand="block" size="medium" [routerLink]="['/home']">Enviar Solicitud</ion-button>
+  <br>
+  <ion-button expand="block" size="medium" [routerLink]="['/home']">Home</ion-button>
+  <ion-button expand="block" size="medium" [routerLink]="['/perfil']">Perfil</ion-button>
+  <ion-button expand="block" size="medium" [routerLink]="['/galeria']">Galería</ion-button>
+  <br>
+  <ion-button expand="block" size="medium" [routerLink]="['/access']">Salir</ion-button>
+</ion-content>
